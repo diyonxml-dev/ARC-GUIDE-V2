@@ -47,7 +47,7 @@
       cards: [
         { icon: "🎵", title: "Cara Memutar Lagu", items: ["Masuk ke voice channel terlebih dahulu.", "Ketik command play di channel bot yang disediakan.", "Gunakan judul lagu atau link yang valid.", "Atur antrean dengan bijak supaya semua member kebagian."] },
         { icon: "m!p", title: "Music Command", items: ["m!p <judul/link> - Putar lagu atau masukin ke queue.", "m!pause - Pause lagu.", "m!resume - Lanjutkan lagu.", "m!s - Skip lagu sekarang.", "m!queue / m!q - Lihat antrean lagu."] },
-        { icon: "🎧", title: "Tips Music", items: ["Pakai m!p buat request lagu.", "Cek m!queue kalau mau lihat lagu yang lagi ngantri.", "Request lagu bebas, asal jangan bikin queue penuh.", "Kalau bot bermasalah coba tunggu sebentar atau cek VC."] },
+        { icon: "🎧", title: "Tips Music", items: ["Pakai m!p buat request lagu.", "Cek m!queue kalau mau lihat lagu yang lagi ngantri.", "Request lagu bebas, asal jangan bikin queue penuh.", "Kalau bot bermasalah coba tunggu sebentar atau cek VC."] }
       ]
     },
     voice: {
@@ -56,7 +56,7 @@
       intro: "Buat voice room sementara untuk party, ngobrol, atau main bareng dengan kontrol yang jelas.",
       cards: [
         { icon: "➕", title: "Buat Channel", items: ["Masuk ke channel Buat Channel untuk membuat room sendiri.", "Room akan dibuat otomatis setelah kamu masuk.", "Kamu jadi owner room dan bisa mengatur room tersebut.", "Room akan otomatis terhapus kalau sudah kosong."] },
-        { icon: "✏", title: "Rename", items: ["Gunakan menu temp voice atau command rename.", "Pilih nama yang jelas dan sopan.", "Hindari simbol berlebihan agar mudah dicari."] },
+        { icon: "✏️", title: "Rename", items: ["Gunakan menu temp voice atau command rename.", "Pilih nama yang jelas dan sopan.", "Hindari simbol berlebihan agar mudah dicari."] },
         { icon: "🔒", title: "Lock & Unlock", items: ["Lock untuk menutup room dari member baru.", "Unlock untuk membuka room kembali.", "Gunakan saat party ingin fokus atau sedang penuh."] },
         { icon: "👑", title: "Transfer Owner", items: ["Pilih member yang sedang berada di room.", "Transfer owner sebelum kamu keluar jika room masih dipakai.", "Owner baru dapat mengatur room seperti biasa."] },
         { icon: "👥", title: "Member Limit", items: ["Atur limit sesuai kebutuhan party.", "Naikkan limit jika ada teman tambahan.", "Turunkan limit untuk menjaga room tetap nyaman."], wide: true }
@@ -72,28 +72,29 @@
       ]
     },
     staff: {
-  kicker: "People Behind ARC",
-  title: "Staff",
-  intro: "Staff membantu menjaga ARC tetap nyaman, rapi, dan seru untuk semua member.",
-  roles: [
-    { name: "Owner", desc: "Pasep - Mengatur arah server, keputusan utama, dan perkembangan ARC." },
-    { name: "Staff", desc: "Dyon, Nnux, dan Napzio - Mengelola server, membantu member, mengatur channel, bot, event, serta menangani masalah yang ada." }
-  ],
-  cards: [
-    { icon: "🛟", title: "Kapan Menghubungi Staff", items: ["Ada member yang melanggar rules.", "Bot atau fitur server bermasalah.", "Butuh bantuan atau penjelasan tentang server.", "Ada masalah yang perlu dibantu selesaikan."] }
-  ]
-},
+      kicker: "People Behind ARC",
+      title: "Staff",
+      intro: "Staff membantu menjaga ARC tetap nyaman, rapi, dan seru untuk semua member.",
+      roles: [
+        { name: "Owner", desc: "Pasep - Mengatur arah server, keputusan utama, dan perkembangan ARC." },
+        { name: "Staff", desc: "Dyon, Nnux, dan Napzio - Mengelola server, membantu member, mengatur channel, bot, event, serta menangani masalah yang ada." }
+      ],
+      cards: [
+        { icon: "🛟", title: "Kapan Menghubungi Staff", items: ["Ada member yang melanggar rules.", "Bot atau fitur server bermasalah.", "Butuh bantuan atau penjelasan tentang server.", "Ada masalah yang perlu dibantu selesaikan."] }
+      ]
+    },
     faq: {
-  kicker: "Quick Help",
-  title: "FAQ",
-  intro: "Jawaban singkat untuk beberapa pertanyaan yang sering muncul di ARC.",
-  cards: [
-    { icon: "🎶", title: "Music Bermasalah", items: ["Pastikan bot sudah masuk ke voice channel.", "Cek permission bot jika musik tidak berjalan.", "Coba tunggu sebentar jika bot mengalami delay.", "Hubungi staff jika masalah tetap terjadi."] },
-    { icon: "🔈", title: "Room Tidak Terbuat", items: ["Pastikan masuk ke channel Buat Channel.", "Tunggu beberapa detik setelah masuk.", "Cek apakah sistem sedang mengalami gangguan.", "Laporkan ke staff jika tetap tidak muncul."] },
-    { icon: "📈", title: "XP atau Level Tidak Bertambah", items: ["XP memiliki cooldown agar tetap seimbang.", "Tidak semua aktivitas memberikan XP.", "Jika ada masalah lama, tanyakan staff."] },
-    { icon: "⚓", title: "Masalah di Server", items: ["Hubungi staff jika menemukan masalah.", "Jelaskan masalah yang terjadi.", "Berikan bukti jika diperlukan agar lebih mudah dibantu."] }
-  ]
-}
+      kicker: "Quick Help",
+      title: "FAQ",
+      intro: "Jawaban singkat untuk beberapa pertanyaan yang sering muncul di ARC.",
+      cards: [
+        { icon: "🎶", title: "Music Bermasalah", items: ["Pastikan bot sudah masuk ke voice channel.", "Cek permission bot jika musik tidak berjalan.", "Coba tunggu sebentar jika bot mengalami delay.", "Hubungi staff jika masalah tetap terjadi."] },
+        { icon: "🔈", title: "Room Tidak Terbuat", items: ["Pastikan masuk ke channel Buat Channel.", "Tunggu beberapa detik setelah masuk.", "Cek apakah sistem sedang mengalami gangguan.", "Laporkan ke staff jika tetap tidak muncul."] },
+        { icon: "📈", title: "XP atau Level Tidak Bertambah", items: ["XP memiliki cooldown agar tetap seimbang.", "Tidak semua aktivitas memberikan XP.", "Jika ada masalah lama, tanyakan staff."] },
+        { icon: "⚓", title: "Masalah di Server", items: ["Hubungi staff jika menemukan masalah.", "Jelaskan masalah yang terjadi.", "Berikan bukti jika diperlukan agar lebih mudah dibantu."] }
+      ]
+    }
+  };
 
   const els = {
     title: document.getElementById("pageTitle"),
@@ -111,10 +112,6 @@
   const rendered = new Map();
   let activePage = "home";
 
-  function toCommand(text) {
-    return { command: text };
-  }
-
   function createEl(tag, className, text) {
     const el = document.createElement(tag);
     if (className) el.className = className;
@@ -128,12 +125,7 @@
       const li = document.createElement("li");
       const dot = createEl("span", "dot");
       const content = createEl("span");
-      if (item && item.command) {
-        const command = createEl("span", "command", item.command);
-        content.append(command);
-      } else {
-        content.textContent = item;
-      }
+      content.textContent = item;
       li.append(dot, content);
       list.append(li);
     });
