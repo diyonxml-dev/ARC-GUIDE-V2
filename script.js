@@ -46,7 +46,7 @@
       intro: "Putar lagu favorit dengan command yang simpel dan tetap nyaman untuk semua pengguna voice.",
       cards: [
         { icon: "🎵", title: "Cara Memutar Lagu", items: ["Masuk ke voice channel terlebih dahulu.", "Ketik command play di channel bot yang disediakan.", "Gunakan judul lagu atau link yang valid.", "Atur antrean dengan bijak supaya semua member kebagian."] },
-        { icon: "m!p", title: "Music Command", items: ["m!p <judul/link> - Putar lagu atau masukin ke queue.", "m!pause - Pause lagu.", "m!resume - Lanjutkan lagu.", "m!s - Skip lagu sekarang.", "m!queue / m!q - Lihat antrean lagu."] },
+        { icon: "m!", title: "Music Command", items: ["m!p <judul/link> - Putar lagu atau masukin ke queue.", "m!pause - Pause lagu.", "m!resume - Lanjutkan lagu.", "m!s - Skip lagu sekarang.", "m!queue / m!q - Lihat antrean lagu."] },
         { icon: "🎧", title: "Tips Music", items: ["Pakai m!p buat request lagu.", "Cek m!queue kalau mau lihat lagu yang lagi ngantri.", "Request lagu bebas, asal jangan bikin queue penuh.", "Kalau bot bermasalah coba tunggu sebentar atau cek VC."] }
       ]
     },
