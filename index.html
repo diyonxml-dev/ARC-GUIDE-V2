@@ -1,136 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#59d7ff">
+    <meta name="description" content="Guide Discord ARC bertema bawah laut: panduan channel, music, temp voice, level system, staff, dan FAQ.">
+    <title>ARC Discord Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Lewati ke konten</a>
+    <div class="ocean" aria-hidden="true">
+      <div class="sunlight"></div>
+      <div class="bubble-field" id="bubbleField"></div>
+      <div class="seaweed seaweed-a"></div>
+      <div class="seaweed seaweed-b"></div>
+      <div class="sand"></div>
+    </div>
 
-<head>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu" aria-controls="sidebar" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+    <div class="scrim" id="scrim" hidden></div>
 
-<title>ARC Guide</title>
+    <aside class="sidebar" id="sidebar" aria-label="Navigasi utama">
+      <div class="brand">
+        <img src="logo.png" width="48" height="48" alt="Logo ARC">
+        <div>
+          <strong>ARC</strong>
+          <span>Discord Guide</span>
+        </div>
+      </div>
+      <nav class="nav" id="nav" aria-label="Halaman guide">
+        <button type="button" class="nav-link is-active" data-page="home">Home</button>
+        <button type="button" class="nav-link" data-page="discord">Discord Guide</button>
+        <button type="button" class="nav-link" data-page="music">Music</button>
+        <button type="button" class="nav-link" data-page="voice">Temp Voice</button>
+        <button type="button" class="nav-link" data-page="level">Level System</button>
+        <button type="button" class="nav-link" data-page="staff">Staff</button>
+        <button type="button" class="nav-link" data-page="faq">FAQ</button>
+      </nav>
+    </aside>
 
-<meta name="theme-color" content="#52cfff">
+    <main class="shell" id="content" tabindex="-1">
+      <section class="hero" aria-labelledby="pageTitle">
+        <p class="eyebrow" id="pageKicker">Summer Underwater Community</p>
+        <h1 id="pageTitle">Welcome ARC</h1>
+        <p id="pageIntro">Panduan cepat untuk menikmati server ARC dengan nyaman, rapi, dan seru bersama komunitas.</p>
+        <div class="hero-actions" id="heroActions"></div>
+      </section>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-
-<div class="background">
-
-<div class="sun"></div>
-
-<div class="light"></div>
-
-<div class="bubble b1"></div>
-<div class="bubble b2"></div>
-<div class="bubble b3"></div>
-<div class="bubble b4"></div>
-<div class="bubble b5"></div>
-<div class="bubble b6"></div>
-
-<div class="seaweed left"></div>
-<div class="seaweed right"></div>
-
-<div class="sand"></div>
-
-</div>
-
-<header class="mobile-header">
-
-<button id="menuButton">
-☰
-</button>
-
-<div class="mobile-logo">
-
-<img src="logo.png">
-
-<span>ARC Guide</span>
-
-</div>
-
-</header>
-
-<div class="container">
-
-<aside class="sidebar" id="sidebar">
-
-<div class="logo">
-
-<img src="logo.png">
-
-<h2>ARC</h2>
-
-<p>Community Guide</p>
-
-</div>
-
-<nav>
-
-<button class="active" data-page="home">
-
-🏠 Home
-
-</button>
-
-<button data-page="discord">
-
-💬 Discord Guide
-
-</button>
-
-<button data-page="music">
-
-🎵 Music
-
-</button>
-
-<button data-page="voice">
-
-🎤 Temp Voice
-
-</button>
-
-<button data-page="level">
-
-⭐ Level
-
-</button>
-
-<button data-page="staff">
-
-👥 Staff
-
-</button>
-
-<button data-page="faq">
-
-❓ FAQ
-
-</button>
-
-</nav>
-
-</aside>
-
-<main class="content">
-
-<section id="page">
-
-</section>
-
-</main>
-
-</div>
-
-<script src="script.js"></script>
-
-</body>
-
+      <section class="content-grid" id="pageMount" aria-live="polite"></section>
+    </main>
+  </body>
 </html>
