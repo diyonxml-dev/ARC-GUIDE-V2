@@ -14,7 +14,7 @@
         {
           icon: "🌊",
           title: "Tentang Server",
-          text: "ARC adalah ruang komunitas santai dengan nuansa laut musim panas: bersih, ramah, dan mudah dipakai untuk ngobrol, bermain, mendengar musik, serta membangun circle baru."
+          text: "ARC adalah server gaming santai untuk bermain bersama, mencari teman mabar, dan menikmati waktu luang. Di sini member bisa ngobrol, bermain game favorit, mendengarkan musik, serta ikut berbagai aktivitas bersama."
         },
         {
           icon: "✨",
@@ -36,7 +36,7 @@
       cards: [
         { icon: "💬", title: "Jenis Channel", items: ["Announcement untuk info penting server.", "General chat untuk ngobrol santai.", "Media untuk berbagi gambar, video, atau momen Roblox.", "Voice channel untuk main bareng dan hangout.", "Support untuk bantuan teknis atau laporan."] },
         { icon: "@", title: "Mention", items: ["Gunakan mention hanya saat perlu perhatian langsung.", "Hindari ping massal tanpa alasan jelas.", "Balas pesan dengan reply agar konteks obrolan tetap rapi.", "Jika butuh bantuan, mention role staff sesuai kebutuhan."] },
-        { icon: "📌", title: "Rules Singkat", items: ["Hormati semua member.", "Tidak spam, flood, atau promosi sembarangan.", "Jaga bahasa tetap aman untuk komunitas.", "Ikuti arahan staff saat moderasi berlangsung."] },
+        { icon: "📌", title: "Rules Singkat", items: ["Dilarang menghina atau menyerang orang lain (SARA).", "Jangan spam, flood, atau mengganggu chat.", "Toxic boleh bercanda, tapi jangan sampai berlebihan atau bikin orang lain tidak nyaman.", "Dilarang mengirim konten NSFW (foto/video tidak pantas).", "Saling menghargai dan respect semua member."] },
         { icon: "💡", title: "Tips", items: ["Cek pinned message pada channel penting.", "Gunakan search sebelum bertanya hal yang sering muncul.", "Matikan notifikasi channel yang terlalu ramai.", "Laporkan masalah dengan bukti dan kronologi singkat."] }
       ]
     },
@@ -46,8 +46,8 @@
       intro: "Putar lagu favorit dengan command yang simpel dan tetap nyaman untuk semua pengguna voice.",
       cards: [
         { icon: "🎵", title: "Cara Memutar Lagu", items: ["Masuk ke voice channel terlebih dahulu.", "Ketik command play di channel bot yang disediakan.", "Gunakan judul lagu atau link yang valid.", "Atur antrean dengan bijak supaya semua member kebagian."] },
-        { icon: "/", title: "Command", items: ["play <judul atau link>", "pause", "resume", "skip", "queue", "stop"].map(toCommand) },
-        { icon: "🎧", title: "Tips Music", items: ["Jangan spam command play.", "Gunakan queue untuk melihat antrean.", "Skip lagu hanya jika mayoritas setuju.", "Jika bot diam, cek permission dan koneksi voice."], wide: true }
+        { icon: "m!p", title: "Music Command", items: ["m!p <judul/link> - Putar lagu atau masukin ke queue.", "m!pause - Pause lagu.", "m!resume - Lanjutkan lagu.", "m!s - Skip lagu sekarang.", "m!queue / m!q - Lihat antrean lagu."] },
+        { icon: "🎧", title: "Tips Music", items: ["Pakai m!p buat request lagu.", "Cek m!queue kalau mau lihat lagu yang lagi ngantri.", "Request lagu bebas, asal jangan bikin queue penuh.", "Kalau bot bermasalah coba tunggu sebentar atau cek VC."] },
       ]
     },
     voice: {
@@ -55,7 +55,7 @@
       title: "Temp Voice",
       intro: "Buat voice room sementara untuk party, ngobrol, atau main bareng dengan kontrol yang jelas.",
       cards: [
-        { icon: "➕", title: "Membuat Room", items: ["Masuk ke channel Create Voice.", "Sistem akan membuat room baru otomatis.", "Kamu menjadi owner room selama masih aktif.", "Room akan hilang saat kosong."] },
+        { icon: "➕", title: "Buat Channel", items: ["Masuk ke channel Buat Channel untuk membuat room sendiri.", "Room akan dibuat otomatis setelah kamu masuk.", "Kamu jadi owner room dan bisa mengatur room tersebut.", "Room akan otomatis terhapus kalau sudah kosong."] },
         { icon: "✏", title: "Rename", items: ["Gunakan menu temp voice atau command rename.", "Pilih nama yang jelas dan sopan.", "Hindari simbol berlebihan agar mudah dicari."] },
         { icon: "🔒", title: "Lock & Unlock", items: ["Lock untuk menutup room dari member baru.", "Unlock untuk membuka room kembali.", "Gunakan saat party ingin fokus atau sedang penuh."] },
         { icon: "👑", title: "Transfer Owner", items: ["Pilih member yang sedang berada di room.", "Transfer owner sebelum kamu keluar jika room masih dipakai.", "Owner baru dapat mengatur room seperti biasa."] },
@@ -72,30 +72,28 @@
       ]
     },
     staff: {
-      kicker: "People Behind ARC",
-      title: "Staff",
-      intro: "Staff menjaga server tetap aman, rapi, dan menyenangkan untuk semua member.",
-      roles: [
-        { name: "Owner", desc: "Mengatur arah server, sistem utama, partnership besar, dan keputusan final komunitas." },
-        { name: "Administrator", desc: "Mengelola konfigurasi server, channel, bot, event, dan kebutuhan operasional harian." },
-        { name: "Moderator", desc: "Membantu member, menjaga chat tetap nyaman, menangani laporan, dan menegakkan rules." }
-      ],
-      cards: [
-        { icon: "🛟", title: "Kapan Menghubungi Staff", items: ["Ada member melanggar rules.", "Bot atau fitur server bermasalah.", "Butuh klarifikasi aturan.", "Terjadi konflik yang perlu ditengahi."] }
-      ]
-    },
+  kicker: "People Behind ARC",
+  title: "Staff",
+  intro: "Staff membantu menjaga ARC tetap nyaman, rapi, dan seru untuk semua member.",
+  roles: [
+    { name: "Owner", desc: "Pasep - Mengatur arah server, keputusan utama, dan perkembangan ARC." },
+    { name: "Staff", desc: "Dyon, Nnux, dan Napzio - Mengelola server, membantu member, mengatur channel, bot, event, serta menangani masalah yang ada." }
+  ],
+  cards: [
+    { icon: "🛟", title: "Kapan Menghubungi Staff", items: ["Ada member yang melanggar rules.", "Bot atau fitur server bermasalah.", "Butuh bantuan atau penjelasan tentang server.", "Ada masalah yang perlu dibantu selesaikan."] }
+  ]
+},
     faq: {
-      kicker: "Quick Help",
-      title: "FAQ",
-      intro: "Jawaban cepat untuk masalah yang paling sering muncul di server.",
-      cards: [
-        { icon: "🎶", title: "Music Tidak Berjalan", items: ["Pastikan kamu sudah masuk voice.", "Cek apakah bot punya permission connect dan speak.", "Coba command stop lalu play ulang.", "Jika masih gagal, hubungi staff dengan nama lagu dan waktu kejadian."] },
-        { icon: "🔈", title: "Voice Tidak Muncul", items: ["Masuk ulang ke channel Create Voice.", "Cek apakah room lama masih aktif.", "Pastikan aplikasi Discord tidak sedang delay.", "Laporkan jika sistem tidak membuat room setelah beberapa detik."] },
-        { icon: "📈", title: "XP Tidak Bertambah", items: ["XP memiliki cooldown.", "Beberapa channel mungkin tidak dihitung.", "Spam tidak mempercepat level.", "Tanyakan staff jika XP berhenti dalam waktu lama."] },
-        { icon: "🧭", title: "Hubungi Staff", items: ["Gunakan channel support atau ticket bila tersedia.", "Jelaskan masalah dengan singkat dan jelas.", "Sertakan screenshot jika membantu.", "Tunggu giliran dengan sabar."] }
-      ]
-    }
-  };
+  kicker: "Quick Help",
+  title: "FAQ",
+  intro: "Jawaban singkat untuk beberapa pertanyaan yang sering muncul di ARC.",
+  cards: [
+    { icon: "🎶", title: "Music Bermasalah", items: ["Pastikan bot sudah masuk ke voice channel.", "Cek permission bot jika musik tidak berjalan.", "Coba tunggu sebentar jika bot mengalami delay.", "Hubungi staff jika masalah tetap terjadi."] },
+    { icon: "🔈", title: "Room Tidak Terbuat", items: ["Pastikan masuk ke channel Buat Channel.", "Tunggu beberapa detik setelah masuk.", "Cek apakah sistem sedang mengalami gangguan.", "Laporkan ke staff jika tetap tidak muncul."] },
+    { icon: "📈", title: "XP atau Level Tidak Bertambah", items: ["XP memiliki cooldown agar tetap seimbang.", "Tidak semua aktivitas memberikan XP.", "Jika ada masalah lama, tanyakan staff."] },
+    { icon: "⚓", title: "Masalah di Server", items: ["Hubungi staff jika menemukan masalah.", "Jelaskan masalah yang terjadi.", "Berikan bukti jika diperlukan agar lebih mudah dibantu."] }
+  ]
+}
 
   const els = {
     title: document.getElementById("pageTitle"),
